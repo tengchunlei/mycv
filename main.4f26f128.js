@@ -120,7 +120,7 @@ var option = {
     grid: {
         left: '3%',
         right: '4%',
-        bottom: '6%',
+        bottom: '1%',
         top: '1%',
         containLabel: true
     },
@@ -136,13 +136,13 @@ var option = {
     },
     yAxis: {
         type: 'category',
-        data: ['沟通协作', 'Vue框架', 'React框架', '项目开发', '静态页面', '基础知识']
+        data: ['沟通协作', '解决问题', '前端可视化', 'React框架', '项目开发', '静态页面', '基础知识']
     },
 
     series: [{ name: '',
         type: 'bar',
         barWidth: 19,
-        data: [80, 75, 90, 90, 75, 90],
+        data: [80, 80, 75, 90, 90, 75, 90],
         itemStyle: {
             normal: {
                 color: 'rgb(14, 131, 205)'
@@ -218,7 +218,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50726' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '53071' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
